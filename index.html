@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Profile Card</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="form-container" id="form-container">
+        <h1>Fill out the profile form below</h1>
+        <form action="">
+          <div class="first">
+            <div class="name-container">
+              <label>Name</label>
+              <input class="form-name" type="text" />
+            </div>
+            <div class="occupation-container">
+              <label>Occupation</label>
+              <input class="form-occupation" type="text" />
+            </div>
+          </div>
+          <div class="about-container">
+            <label>About Me</label>
+            <textarea class="form-about" name="" id=""></textarea>
+          </div>
+          <div class="image-container">
+            <label>Image</label>
+            <input class="form-img" type="file" accept="image/" required />
+          </div>
+          <div class="form-socials">
+            <div class="github-container">
+              <label>Github</label>
+              <input type="text" class="form-github" placeholder="Paste here" />
+            </div>
+            <div class="twitter-container">
+              <label for="">Twitter</label>
+              <input
+                type="text"
+                class="form-twitter"
+                placeholder="Paste link here"
+              />
+            </div>
+          </div>
+          <div class="form-btn">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <section class="profile-container hidden" id="profile-container">
+        <h1>View your profile</h1>
+        <div class="profile">
+          <div class="img-section">
+            <img class="profile-img" id="profile-img" alt="" />
+          </div>
+          <div class="info-section">
+            <h1 class="profile-name"></h1>
+            <p class="profile-occupation"></p>
+            <p class="profile-about"></p>
+          </div>
+          <div class="socials">
+            <ul>
+              <li>
+                <a
+                  href=""
+                  id="github-link"
+                  class="fa-brands fa-github fa-2x"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  id="twitter-link"
+                  class="fa-brands fa-twitter fa-2x"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
